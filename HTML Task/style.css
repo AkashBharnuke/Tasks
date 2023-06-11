@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0%;
+    margin: 0%;
+    /* reset */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin-top: -100px;
+  }
+  
+  .flex-item-left {
+    width: 790px;
+    height: 899.82px;
+    object-fit: cover;
+
+  }
+  
+  .flex-item-right {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 250px 10px 200px 220px;
+    
+  }
+
+  
+
+.welcome{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 19px;
+color: #2D3748;
+
+padding-bottom: 2px;
+}
+
+#msgpass, #msgemail {
+  color: red;
+  visibility: hidden;
+}
+
+.logaccount
+{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 35px;
+
+color: #1A202C;
+padding-bottom: 24px;
+}
+
+.emaillabel
+{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 19px;
+padding-bottom: 11px;
+padding-top: 5px;
+color: #4A5568;
+}
+
+.emailtext{
+    box-sizing: border-box;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    width: 350PX;
+    height: 50px;
+    font-size: 18px;
+    line-height: 20px;
+   
+    
+}
+
+.labels {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 14px;
+
+padding-top: 0px;
+padding-bottom: 5px;
+}
+
+
+.btnlogin {
+    background-color: #04c45c; 
+    border-radius: 5px;
+    color: white;
+    width: 347px;
+    height: 50px;
+    border:none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 15px;    
+
+  }
+  
+
+  
+.btnsignin {
+    background-color: #2d3748; 
+    border-radius: 5px;
+    color: white;
+    width: 347px;
+    height: 50px;
+    text-align: center;
+    border:none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  
+  }
+
+.googleicon {
+    padding: 0px 0px 0px 0px;
+}
+
+
+.bottommessage {
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+margin-top: 100px;
+margin-left: 50px;
+color: #616161;
+}
+
+    
+
+@media only screen and (max-width: 900px) {
+
+    .flex-item-left {
+    display: none;
+
+
+    }
+    
+
+    .flex-item-right {
+        width: 80%;
+        padding-left: 80px;
+        padding-right:100px;
+    }
+  }
+
+
+  @media only screen and (max-width: 400px) {
+
+    .flex-item-left {
+    display: none;
+
+
+    }
+    
+
+    .flex-item-right {
+        width: 70%;
+        padding-left: 50px;
+        padding-right:40px;
+    }
+  }
+
+
+  

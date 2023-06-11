@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="validation.js"></script>
+</head>
+
+
+<body>
+
+<!--  -->
+
+<div class="flex-container">
+    <!-- left Part - Image -->
+  <div class="flex-item-left">
+
+    <img src="imagenaturemin.jpg" alt="nature image">
+    
+
+  </div>
+
+
+  <!-- Right Part - Login Side -->
+  <div class="flex-item-right">
+    
+    <form id="form" method="POST">
+
+    <div class="welcome">
+    Welcome back</div>
+
+        <div class="logaccount">
+         Login to your account
+         </div>
+
+        <div class="emaillabel">
+        <label for="useremail">Email</label>
+        </div>
+
+        <input class="emailtext" type="email" id="useremail" placeholder="sample@gmail.com" required> <br>
+        <p id="msgemail"></p>
+
+
+        <div class="emaillabel">
+            <label for="userpass">Password</label>
+        </div>
+        <input class="emailtext" type="password" id="userpass" placeholder="########" minlength="8" required> <br>
+        <p id="msgpass"></p>
+
+
+        <div class="labels">
+            <input class="check" type="checkbox" id="check"> 
+            <label style="padding-left: 11px;">Remember Me</label> <label style="padding-left: 119px;"><a href="#">Forget Password?</a></label>
+
+        </div> 
+
+
+        <button class="btnlogin" id="login" type="submit" onclick="event.preventDefault(); validate()">Login</button>
+
+        <button class="btnsignin"><img src="googleicon.png" class="googleicon" width="20px" height="20px"> or sign-in with Google</button>
+
+        <div class="bottommessage">
+            Don't have an account? <a href="#">Join free today</a>
+   
+        </div>
+
+    </div>
+</form>
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    
+    <title>Fetching Data from API</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    Hi, 
+
+    <script>
+
+    async function apifunc() {
+    const resp = await fetch('https://run.mocky.io/v3/9b184f9d-bf48-4467-9d8f-137ea0eba817');
+    let jsondata = await resp.json();
+
+    console.log("The data we got: ", jsondata);
+
+    document.write("<h1>Employee Data</h1>");
+    document.write("<table> <tr><th>Name</th><th>Office</th> <th>Position</th> <th>Salary</th> </tr>");
+
+    for(let i in `${jsondata.data}`){ //adding data to each row.
+
+        document.write("<tr> <td>" + `${jsondata.data[i].name}` + "</td>"); //Data added in the first cell
+        document.write("<td>" + `${jsondata.data[i].office}` + "</td>"); //Data added in the second cell
+        document.write("<td>" + `${jsondata.data[i].position}` + "</td>"); //Data added in the third cell
+        document.write("<td>" + `${jsondata.data[i].salary}` + "</td></tr>"); //Data added in the fourth cell
+
+    }
+        document.write("</table>");
+
+
+    }
+
+    apifunc();
+
+    </script>
+
+</body>
+
+
+</html>
+
